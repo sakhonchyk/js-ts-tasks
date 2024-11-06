@@ -5,5 +5,18 @@
  * @returns {string}
  */
 module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secondNumber) {
-  throw new Error('Not implemented');
+    if (firstNumber < secondNumber) {
+        return "<";
+    }
+
+    if (firstNumber === secondNumber) {
+        return "=";
+    }
+
+    if (firstNumber > secondNumber) {
+        return ">";
+    }
+
+
+    throw new Error('Not implemented');
 };
